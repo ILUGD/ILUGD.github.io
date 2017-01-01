@@ -1,0 +1,12 @@
+body {
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+h1 {
+  font-size: 48px;
+}
