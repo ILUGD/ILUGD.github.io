@@ -10,3 +10,26 @@ body {
 h1 {
   font-size: 48px;
 }
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    color: #376fa0;
+}
+a:hover, a:active {
+    border-bottom: 1px solid;
+}
+
+.social-links ul {
+}
+
+.social-links li {
+    text-align: left;
+}
+
+#listtop > li {
+	text-align: left;
+	margin-left: 30%;
+	margin-right: 50%;
+}
