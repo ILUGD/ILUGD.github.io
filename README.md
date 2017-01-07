@@ -1,16 +1,6 @@
-# ilug-d.github.io
+# [ilug-d.github.io](#https://ilug-d.github.io/) 
 
 Homepage of [ILUG-D](https://ilug-d.github.io/) 
-
-
-## Contributing
-
-There are multiple ways to contribute to this website
-
-- Add missing documentation.
-- Report or fix bugs.
-- Improve design and asthetics of the website.
-- Request/Ask/Submit new features.
 
 
 ## Changelog
