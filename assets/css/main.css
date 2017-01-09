@@ -1,35 +1,72 @@
 body {
   font-family: 'Space Mono', monospace;
   text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  flex-direction: column;
-  height: 400px;
-}
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
-h1 {
-  font-size: 48px;
-}
+@media only screen and (min-width: 700px) {
+  body {
+    height: 400px; }
+  h1 {
+    font-size: 48px; } }
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+    margin-top: 10px; } }
 
 a {
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border-bottom: 1px solid transparent;
-    color: #376fa0;
-}
-a:hover, a:active {
-    border-bottom: 1px solid;
-}
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  color: #376fa0; }
+  a:hover, a:active {
+    border-bottom: 1px solid; }
 
-.social-links ul {
-}
+@media only screen and (min-width: 700px) {
+  section {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 30px; }
+    section .social-links {
+      width: 30%; }
+      section .social-links ul li {
+        text-align: left; }
+    section .description {
+      width: 50%;
+      padding: 5%; } }
 
-.social-links li {
-    text-align: left;
-}
+@media only screen and (max-width: 700px) {
+  section {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    text-align: center; }
+    section .social-links {
+      width: 90%; }
+      section .social-links ul li {
+        text-align: left;
+        list-style: none; }
+    section .description {
+      width: 90%;
+      padding: 5%; } }
 
 #listtop > li {
-	text-align: left;
-	margin-left: 30%;
-	margin-right: 50%;
-}
+  text-align: left;
+  margin-left: 30%;
+  margin-right: 10%; }
