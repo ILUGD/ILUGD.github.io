@@ -1,10 +1,6 @@
 body {
   font-family: 'Space Mono', monospace;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 400px;
 }
 
 h1 {
@@ -22,14 +18,27 @@ a:hover, a:active {
 }
 
 .social-links ul {
+    list-style: none;
 }
 
 .social-links li {
+    display: inline;
     text-align: left;
+    font-size:45px;
+    margin:5px;
+    padding:5px; 
 }
 
-#listtop > li {
-	text-align: left;
-	margin-left: 30%;
-	margin-right: 50%;
+
+.container{
+    width: 100%;
+    padding:0;
+}
+.row{
+    background: rgba(0,0,0,0.1);
+    margin: 2px 0px;
+}
+.heading{
+    background: rgba(255,255,255,0.3);
+    color: #000;
 }
