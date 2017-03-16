@@ -1,35 +1,112 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: 'PT Sans', sans-serif;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 400px;
 }
 
-h1 {
-  font-size: 48px;
+section{
+  padding-top: 5px;
+}
+
+.header-logo{
+  width: 13%;
+}
+
+p {
+  font-size: 25px;
+}
+
+h1{
+  font-size: 35px;
 }
 
 a {
     text-decoration: none;
     transition: all 0.3s ease;
     border-bottom: 1px solid transparent;
-    color: #376fa0;
+    color: #000;
 }
 a:hover, a:active {
     border-bottom: 1px solid;
 }
 
-.social-links ul {
+.page-home .social-links ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  list-style: none;
+  padding-left: 0px;
 }
-
-.social-links li {
-    text-align: left;
+.page-home .social-links li a {
+  padding: 5px 10px;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 1px solid #00cc88;
 }
-
-#listtop > li {
-	text-align: left;
-	margin-left: 30%;
-	margin-right: 50%;
+.page-home .social-links li:hover a {
+  color: #000;
+  border: None;
+  background: #00e699;
+  border-bottom: 1px solid #000;
+}
+.page-home .social-links ul li {
+  display: inline-block;
+  margin-right: -4px;
+  margin-bottom: 0;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.page-home .social-links ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+  z-index: 1;
+}
+.page-home .social-links ul li ul li a{
+  background: #376fa0;
+  display: block;
+  width: 150px;
+  color: #fff;
+}
+.page-home .social-links ul li ul li small {
+  font-size: 56%;
+}
+.page-home .social-links ul li ul li:hover a { background: #00e699; }
+.page-home .social-links ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
