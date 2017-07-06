@@ -1,2 +1,2 @@
 # ilugd.github.io
-Homepage of ILUG-D 
+Homepage of Indian Linux User Group Delhi and NCR.  
