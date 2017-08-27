@@ -19,7 +19,6 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
