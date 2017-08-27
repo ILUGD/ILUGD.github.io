@@ -14,17 +14,25 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  flex-direction: column;
-  height: 400px;
-}
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 section{
   padding-top: 5px;
 }
 
 .header-logo{
-  width: 13%;
+  width: 25%;
+}
+
+@media (max-width: 500px) {
+  .header-logo{
+    width: 55%;
+  }
 }
 
 p {
@@ -43,6 +51,10 @@ a {
 }
 a:hover, a:active {
     
+}
+
+.page-home .social-links {
+  margin-top: 30px;
 }
 
 .page-home .social-links ul {
