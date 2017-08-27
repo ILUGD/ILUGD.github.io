@@ -24,8 +24,8 @@ section{
   padding-top: 5px;
 }
 
-.header-logo{
-  width: 40%;
+.header-logo {
+  max-width: 30%;
 }
 
 p {
