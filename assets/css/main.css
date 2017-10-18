@@ -13,12 +13,23 @@ body{
   color: #000;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  /*animation-name: bg-appear;
+  animation-duration: 7s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;*/
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .wrapper{
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*display: flex;
+  flex-wrap: wrap;*/
   background: #FFD97D;
   background-image: radial-gradient(#e2bf6a 15%, #FFD97D 15%);
   background-size: 20px 20px;
@@ -30,13 +41,22 @@ body{
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 @keyframes bg-move {
   from {background-position:0 0;}
 	to {background-position: 500px 500px;}
 }
+@keyframes bg-appear {
+  from {filter: opacity(0); }
+	to {filter: opacity(1);}
+}
+
+/*section{
+  border: 1px solid black;
+}*/
 
 .header{
   height: 50%;
@@ -83,6 +103,13 @@ body{
 .logotype{
   font-size: 60px;
   font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+.logotype:hover{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: #fff;
+  filter: drop-shadow(5px 5px #000);
 }
 
 .intro{
@@ -154,7 +181,7 @@ body{
 
 .meetup{
   background: #EE6055;
-  width: 50%;
+  /*width: 50%;*/
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -168,6 +195,7 @@ body{
 .desc{
   font-size: 30px;
   color: #fff;
+  margin: 10px 0;
 }
 
 .date{
@@ -176,12 +204,80 @@ body{
 }
 
 .button-primary{
-  padding: 10px;
-  margin-top: 20px;
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   background: #fff;
   border-radius: 35px;
   width: 150px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-primary:hover{
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+
+@media only screen and (max-width: 320px){
+
+  .wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .navbar{
+    padding: 0 10px;
+    background: #FFD97D;
+    border-radius: 3px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  .social{
+    margin: 0 auto;
+  }
+
+  .content{
+    width: 95%;
+    position: relative;
+  }
+
+  .logo{
+    width: 50px;
+    height: 75px;
+  }
+
+  .logotype{
+    font-size: 50px;
+  }
+
+  .intro{
+    font-size: 20px;
+  }
+
+  .caption{
+    font-size: 25px;
+  }
+
+  .desc{
+    font-size: 20px;
+  }
+
+  .date{
+    font-size: 18px;
+  }
+
+  .button-primary{
+    width: 75px;
+    font-size: 15px;
+    padding: 5px 10px;
+  }
 }
