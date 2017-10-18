@@ -1,3 +1,6 @@
+
+
+
 function display_next_event(el) {
     // Display the next event available on meetup.com in the given html element.
     //
@@ -29,9 +32,10 @@ function display_next_event(el) {
           var next_event = response.data.next_event;
           // display only when there is an event.
           if (next_event){
-            var event_title = next_event.name + ' (' + timeConverter(next_event.time) + ')';
+            var event_title = next_event.name;
+            var date = imeConverter(next_event.time);
             var event_url = 'http://www.meetup.com/'+meetup_group+'/events/' + next_event.id;
-            var html = '<span class=caption>'+ caption +'</span><a target="_blank" href=' + event_url + '>' + event_title + '</a>';
+            var html = '<h1 class=caption>'+ caption +'</h1><p class=desc>' + event_title + '</p><span class=date>' + date + '</span>';
             $(el).html(html).css({'opacity': 1});
           };
       }
