@@ -34,7 +34,10 @@
 
 .volunteer img {
   border-radius: 50%;
-  border: #fcee97 2px solid;
+  // border: #fcee97 2px solid;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.2);
 }
 
 .volunteer .links {
