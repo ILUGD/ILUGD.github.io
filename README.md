@@ -9,12 +9,13 @@ We requests all volunteers to add following things:
 3. External links to your profiles on other platforms 
 
 Please keep in mind that we only expect you to share links to following platforms:
-1. Instagram
+1. Github
 2. Twitter
 3. Linkedin
 4. Facebook
 5. Youtube
-  
+6. Instagram
+
 ### Adding yourself as a volunteer
 
 1. Clone this repository.
