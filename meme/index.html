@@ -9,50 +9,28 @@
     <h1 style="text-align: center;">ILUG-D Meme Gallery **</h1>
     <h4 style="text-align: center;">** All memes here are posted after taking permission from the person and creator of meme and this is a offtopic community collaboration for fun only</h4>
 
-    <div ID="ngy2p" data-nanogallery2='{
-        "itemsBaseURL": "images/",
-        "thumbnailWidth": "200",
-        "thumbnailAlignment": "center"
-      }'>
-      <a href="xeon-meme.png" data-ngthumb="xeon-meme.png" data-ngdesc="">the guy in image gets angry very fast so its adviced not to mess up with his server logs or things can go out of hand</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 2</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 3</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 4</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 5</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 6</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 7</a>
-    
-    
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 1</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 2</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 3</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 4</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 5</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 6</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 7</a>
+    <div id="meme_gallery"></div>
 
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 2</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 3</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 4</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 5</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 6</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 7</a>
-
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 1</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 2</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 3</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 4</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 5</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 6</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 7</a>
-
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 2</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 3</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 4</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 5</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 6</a>
-      <a href="photo.jpg" data-ngthumb="photo.jpg" data-ngdesc="">meme description 7</a>
-    </div>
+    <script>
+      jQuery(document).ready(function () {
+      jQuery("#meme_gallery").nanogallery2({
+      items:
+        [
+          {
+            src: "5RTn9fK.jpg",
+            srct: "5RTn9fK.jpg",
+            title: "meme on xeon zolt",
+            description: "the guy in image gets angry very fast so its adviced not to mess up with his server logs or things can go out of hand"
+            }
+        ],
+        thumbnailWidth:  'auto',
+        thumbnailHeight: 200,
+        itemsBaseURL:    'https://i.imgur.com/',
+        
+        locationHash:    false
+        });
+      });
+    </script>
     
   </body>
 </html>
