@@ -20,11 +20,11 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 5. Make sure your code lints.
 6. Issue that pull request!
 
-## Any contributions you make will be under the ****** License
-In short, when you submit code changes, your submissions are understood to be under the same [****** License]() that covers the project. Feel free to contact the maintainers if that's a concern.
+## Any contributions you make will be under the [MIT License](https://raw.githubusercontent.com/ILUGD/ILUGD.github.io/master/LICENSE)
+In short, when you submit code changes, your submissions are understood to be under the same [License](https://raw.githubusercontent.com/ILUGD/ILUGD.github.io/master/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
 
 ## Report bugs using Github's [issues](https://github.com/ILUGD/ILUGD.github.io/issues)
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/ILUGD/ILUGD.github.io/issues/new); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/ILUGD/ILUGD.github.io/issues/new), it's that easy!
 
 ## Write bug reports with detail, background, and sample code
 
@@ -40,5 +40,8 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 People *love* thorough bug reports. I'm not even kidding.
 
+## Maintaining Changelog
+Maintainers are to update changelog for every major change in the code. To know more about changelogs, check out the [keep a changelog](https://keepachangelog.com/en/1.0.0/) website.
+
 ## License
-By contributing, you agree that your contributions will be licensed under its ****** License.
+By contributing, you agree that your contributions will be licensed under its [MIT License](https://raw.githubusercontent.com/ILUGD/ILUGD.github.io/master/LICENSE).
