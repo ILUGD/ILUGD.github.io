@@ -49,9 +49,6 @@ a {
     border-bottom: 1px solid transparent;
     color: #000;
 }
-a:hover, a:active {
-    
-}
 
 .page-home .social-links {
   margin-top: 30px;
@@ -104,7 +101,7 @@ a:hover, a:active {
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
+  transition: opacity 0.2s;
   z-index: 1;
 }
 .page-home .social-links ul li ul li a{
@@ -132,7 +129,7 @@ a:hover, a:active {
 .page-home .section--next_event .caption {
   display: inline-block;
   background-color: #11fac2;
-  background-color: ##eee;
+  background-color: #eee;
   padding: 10px;
 }
 .page-home .section--next_event a {
@@ -154,4 +151,21 @@ a:hover, a:active {
 }
 .announcement{
   font-size:1.5em;
+}
+
+.github-fork:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% { transform: rotate(0); }
+  20%, 60% { transform: rotate(-25deg); }
+  40%, 80% { transform: rotate(10deg); }
+}
+
+@media (max-width: 500px) {
+  .github-fork:hover .octo-arm { animation: none; }
+  .github-fork .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
