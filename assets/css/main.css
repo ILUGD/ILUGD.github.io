@@ -169,3 +169,46 @@ a {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
+/* ----------------------------
+   Code of Conduct page styles
+   ---------------------------- */
+.page-coc {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-coc h1 {
+  text-align: center;
+  margin: 0.6em 0 0.4em;
+}
+
+.page-coc h2 {
+  font-size: 28px;
+  margin: 1.2em 0 0.4em;
+}
+
+.page-coc p {
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0.6em 0;
+}
+
+.page-coc ul {
+  margin: 0.4em 0 0.9em;
+  padding-left: 1.2em;
+}
+
+.page-coc li {
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0.35em 0;
+}
+
+.page-coc a {
+  border-bottom: 1px solid #00cc88;
+}
+
+.page-coc a:hover {
+  border-bottom: 1px solid transparent;
+}
